@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowngarden Bokning</title>
+    <link rel="stylesheet" href="./Styles/nav.css">
+    <link rel="stylesheet" href="./Styles/booking-main.css">
+    <link rel="stylesheet" href="./Styles/general.css">
+    <link rel="icon" type="image/png" href="./Images/golfare.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header>
+        <nav id="nav-menu">
+            <a href="booking.html" class="nav-link" style="grid-column: 2;">Boka tid</a>
+            <a href="event.html" class="nav-link" style="grid-column: 4;">Event</a>
+            <a href="member.html" class="nav-link" style="grid-column: 6;">Medlem</a>
+            <a href="/CrownGarden/CrownGarden.html" style="grid-column: 8;">
+                <img id="logga-icon" src="./Images/CrownGardenLogga.png" alt="Bild på vår logga">
+            </a>
+            <a href="store&restaurant.html" class="nav-link" style="grid-column: 10;">Butik</a>
+            <a href="contact.html" class="nav-link" style="grid-column: 12;">Kontakta oss</a>
+            <a href="about.html" class="nav-link" style="grid-column: 14;">Om oss</a>
+        </nav>
+
+        <a href="/CrownGarden/CrownGarden.html">
+            <img id="seconIcon" src="./Images/CrownGardenLogga.png" alt="Bild på vår logga" href="/CrownGarden/CrownGarden.html">
+        </a>
+
+        <div id="menu">
+            <input type="checkbox" id="dropdown-check">
+            <div class="bar top"></div>
+            <div class="bar center"></div>
+            <div class="bar bottom"></div>
+            
+            
+            <div id="dropdown-menu">
+                <a class="dropdown-link" href="booking.html">Boka tid</a>
+                <a class="dropdown-link" href="event.html">Event</a>
+                <a class="dropdown-link" href="member.html">Medlem</a>
+                <a class="dropdown-link" href="store&restaurant.html">Butik</a>
+                <a class="dropdown-link" href="contact.html">Contact Us</a>
+                <a id="lastdropdown-link" href="about.html">Om oss</a>
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+
+        <section id="user-interact">
+            <section id="time">
+                <input type="radio" id="submit-time-one" name="submit-time">
+                <div class="time-one">10:00</div>
+                <section id="confirm">Boka</section>
+    
+                <input type="radio" id="submit-time-two" name="submit-time">
+                <div class="time-two">11:00</div>
+                <section id="confirm-two">Boka</section>
+    
+                <input type="radio" id="submit-time-three" name="submit-time">
+                <div class="time-three">13:00</div>
+                <section id="confirm-three">Boka</section>
+    
+                <input type="radio" id="submit-time-four" name="submit-time">
+                <div class="time-four">16:30</div>
+                <section id="confirm-four">Boka</section>
+    
+                <input type="radio" id="submit-time-five" name="submit-time">
+                <div class="time-five">18:30</div>
+                <section id="confirm-five">Boka</section>
+            </section>
+    
+            <section id="calendar-section">
+    
+                <section class="booking largest-months">
+                  <p>Mån</p>
+                  <p>Tis</p>
+                  <p>Ons</p>
+                  <p>Tors</p>
+                  <p>Fre</p>
+                  <p>Lör</p>
+                  <p>Sön</p>
+    
+                  <input type="radio" id="selection-date-checkbox-before" name="radio-date-change">
+                  <input type="radio" id="selection-date-checkbox-after" name="radio-date-change">
+    
+                  <div id="selection-date">Juli 2024</div>
+                  <div id="selection-date-before"></div>
+                  <div id="selection-date-after"></div>
+    
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-1  check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-2  check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-3  check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-4  check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-5  check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-6  check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-7  check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-8  check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-9  check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-10 check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-11 check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-12 check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-13 check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-14 check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-15 check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-16 check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-17 check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-18 check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-19 check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-20 check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-21 check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-22 check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-23 check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-24 check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-25 check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-26 check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-27 check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-28 check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-29 check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-30 check-date">
+                  <input type="checkbox" style="z-index: 1; opacity: 0; cursor: pointer;" class="check-31 check-date">
+    
+                  <div class="dates-container">
+                    <div class="date-universal day-1">1</div>
+                    <div class="date-universal day-2">2</div>
+                    <div class="date-universal day-3">3</div>
+                    <div class="date-universal day-4">4</div>
+                    <div class="date-universal day-5">5</div>
+                    <div class="date-universal day-6">6</div>
+                    <div class="date-universal day-7">7</div>
+                    <div class="date-universal day-8">8</div>
+                    <div class="date-universal day-9">9</div>
+                    <div class="date-universal day-10">10</div>
+                    <div class="date-universal day-11">11</div>
+                    <div class="date-universal day-12">12</div>
+                    <div class="date-universal day-13">13</div>
+                    <div class="date-universal day-14">14</div>
+                    <div class="date-universal day-15">15</div>
+                    <div class="date-universal day-16">16</div>
+                    <div class="date-universal day-17">17</div>
+                    <div class="date-universal day-18">18</div>
+                    <div class="date-universal day-19">19</div>
+                    <div class="date-universal day-20">20</div>
+                    <div class="date-universal day-21">21</div>
+                    <div class="date-universal day-22">22</div>
+                    <div class="date-universal day-23">23</div>
+                    <div class="date-universal day-24">24</div>
+                    <div class="date-universal day-25">25</div>
+                    <div class="date-universal day-26">26</div>
+                    <div class="date-universal day-27">27</div>
+                    <div class="date-universal day-28">28</div>
+                    <div class="date-universal day-29">29</div>
+                    <div class="date-universal day-30">30</div>
+                    <div class="date-universal day-31">31</div>
+                  </div>
+                </section>
+            </section>
+        </section>
+
+        <section id="rules" style="position: absolute; height: min-content; width: 400px;">
+            <input type="checkbox" class="rules-check rule-check-1">
+            <input type="radio" class="rules-check rule-check-2" name="rule-radio">
+            <input type="radio" class="rules-check rule-check-3" name="rule-radio">
+            <input type="radio" class="rules-check rule-check-4" name="rule-radio">
+            <input type="radio" class="rules-check rule-check-5" name="rule-radio">
+            <input type="radio" class="rules-check rule-check-6" name="rule-radio">
+            <input type="radio" class="rules-check rule-check-7" name="rule-radio">
+
+            <div class="drop-down-rule rules">Regler</div>
+            <div class="drop-down-rule rule-one" style="margin: 0px 0 0 0px; border-radius: 0;">Håll spelet i rörelse</div>
+            <div class="drop-down-rule rule-two" style="margin: 0px 0 0 0px; border-radius: 0; border-width: 0 3px 0 3px;">Säkerhet först</div>
+            <div class="drop-down-rule rule-three" style="margin: 0px 0 0 0px; border-radius: 0; border-width: 3px 3px 0 3px;">Laga nedslagsmärken</div>
+            <div class="drop-down-rule rule-four" style="margin: 0px 0 0 0px; border-radius: 0; border-width: 3px 3px 0 3px;">Kratta bunkrar</div>
+            <div class="drop-down-rule rule-five" style="margin: 0px 0 0 0px; border-radius: 0; border-width: 3px 3px 0 3px;">Tystnad och respekt</div>
+            <div class="drop-down-rule rule-six" style="margin: 0px 0 0 0px; border-radius: 0 0 10px 10px;">Lämna inte skräp</div>
+
+            <div class="popout-rule popout-rule-one">Spela snabbt och håll tempot för att undvika förseningar för spelare bakom dig.</div>
+            <div class="popout-rule popout-rule-two">Kontrollera att ingen är i vägen innan du slår och ropa “fore” om bollen riskerar att träffa någon.</div>
+            <div class="popout-rule popout-rule-three">Laga nedslagsmärken och uppslagen torv: Hjälp till att hålla banan i bra skick genom att laga skador på green och fairways.</div>
+            <div class="popout-rule popout-rule-four">Använd bunkerkrattan efter att du slagit och lämna sanden jämn för nästa spelare.</div>
+            <div class="popout-rule popout-rule-five">Håll dig tyst och stilla när andra spelar, och undvik att störa deras koncentration.</div>
+            <div class="popout-rule popout-rule-six">Håll banan ren och släng ditt skräp i avsedda behållare eller ta med det tillbaka till klubbhuset.</div>
+
+
+        </section>
+
+        <div id="golfbana-bild"></div>
+
+    </main>
+
+    <footer class="footer-container">
+        <div class="footer-grp-one">
+            <div class="linkedin-logga-container">
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <a href="https://www.linkedin.com/in/andreas-sjölander-12b661323/" target="_blank">Andreas</a>
+            <a href="https://www.linkedin.com/in/oscar-bagler-331569271/" target="_blank">Oscar.B</a>
+        </div>
+
+        <div class="footer-grp-one">
+            <div class="linkedin-logga-container">
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <a href="https://www.linkedin.com/in/youssef-kouliana-webbutvecklare/" target="_blank">Youssef</a>
+            <a href="http://linkedin.com/in/emil-karlsson-eriksson-3802ba324" target="_blank">Emil</a>
+            <a href="http://linkedin.com/in/sara-månsberg-1754b6174" target="_blank">Sara</a>
+        </div>
+
+        <div class="footer-grp-one">
+            <div class="linkedin-logga-container">
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <a href="https://www.linkedin.com/in/mattis-ericsson-bergman-31700224a/" target="_blank">Mattis</a>
+            <a href="https://www.linkedin.com/in/oskar-josefsson-604984231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Oskar.J</a>
+        </div> 
+    </footer>
+    
+</body>
+</html>

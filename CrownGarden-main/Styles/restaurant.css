@@ -1,0 +1,191 @@
+
+#background-image-welcome1{
+    background-image: url(/CrownGarden/Images/restaurant-header2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 300px;
+    z-index: -1;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(246, 250, 246);
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 20px 35px 30px;
+    margin: auto;
+}
+
+.header-text {
+    max-width: 1050px;
+    text-align: center;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0px 10px 30px 10px;
+}
+
+.menu-container .menu-text li {
+    list-style-type: none;
+    margin: 25px auto 1px auto;
+    text-align: center;
+}
+
+.menu-container h2 {
+    margin-bottom: 10px;
+}
+
+.side-menu {
+    border-left: solid #2e8b57;  
+    padding-left: 45px;
+    max-width: 200px;
+}
+
+.side-menu h2 {
+    margin-bottom: 8px;
+}
+
+.side-menu h2:nth-child(4) {
+    margin-top: 20px;
+}
+
+.side-menu h2:nth-child(6) {
+    margin-top: 20px;
+}
+
+.side-menu p {
+    margin-bottom: 10px;
+}
+
+.list-day {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+li p {
+    margin-bottom: 6px;
+}
+
+.alacarte-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin: 10px auto 20px auto;
+}
+
+.alacarte-pic img {
+    width: 100%;
+}
+
+
+
+.chef-ingredient-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.chef-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    text-align: center;
+    /* border-top: dotted rgb(211, 229, 205);  */
+    border-top: dotted #2e8b57;
+    padding-top: 25px;
+}
+
+.ingredients-container {
+    display: flex;
+    flex-direction: row-reverse;    
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 25px;
+    /* border-top: dotted rgb(211, 229, 205);  */
+    border-top: dotted #2e8b57;
+}
+
+.chef-text, .ingredient-text {
+    flex-direction: row;
+}
+
+.chef-text h2, .ingredient-text h2 {
+    margin-bottom: 10px;
+}
+
+.chef-pic {
+    max-width: 500px;
+    border-radius: 2px;
+    margin-right: 25px;
+    box-shadow: 1px 1px 5px rgb(180, 193, 174);
+}
+
+.ingredient-pic {
+    max-width: 500px;
+    border-radius: 2px; 
+    margin-left: 25px;
+    box-shadow: 1px 1px 5px rgb(180, 193, 174);
+    max-height: 317px;
+}
+
+
+@media screen and (max-width: 900px) {
+    
+.chef-container {
+    flex-direction: column;
+}
+
+.chef-pic {
+    margin: 0px auto 10px auto;
+    width: 80%;
+}
+
+.ingredients-container {
+    flex-direction: column;
+}
+
+.ingredient-pic {
+    margin: 0px auto 10px auto;
+    width: 80%;
+}
+
+}
+
+@media screen and (max-width: 798px) {
+    .menu-container {
+        flex-direction: column;
+        border-bottom: dotted #2e8b57;
+    }
+
+    .menu-text {
+        border-bottom: dotted #2e8b57;
+        margin-top: -10px;
+        padding-bottom: 15px;
+    }
+
+    .side-menu {
+        margin: 15px auto 5px auto;
+        border-left: none;
+        padding-left: 0px;
+    }
+
+    .alacarte-pic img {
+        width: 90%;
+    }
+    
+}

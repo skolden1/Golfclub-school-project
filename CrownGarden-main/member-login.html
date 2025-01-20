@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowngarden Medlem</title>
+    <link rel="stylesheet" href="./Styles/nav.css">
+    <link rel="stylesheet" href="./Styles/member.css">
+    <link rel="stylesheet" href="./Styles/general.css">
+    <link rel="icon" type="image/png" href="./Images/golfare.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header>
+        <nav id="nav-menu">
+            <a href="booking.html" class="nav-link" style="grid-column: 2;">Boka tid</a>
+            <a href="event.html" class="nav-link" style="grid-column: 4;">Event</a>
+            <a href="member.html" class="nav-link" style="grid-column: 6;">Medlem</a>
+            <a href="/CrownGarden/CrownGarden.html" style="grid-column: 8;">
+                <img id="logga-icon" src="./Images/CrownGardenLogga.png" alt="Bild på vår logga">
+            </a>
+            <a href="store&restaurant.html" class="nav-link" style="grid-column: 10;">Butik</a>
+            <a href="contact.html" class="nav-link" style="grid-column: 12;">Kontakta oss</a>
+            <a href="about.html" class="nav-link" style="grid-column: 14;">Om oss</a>
+        </nav>
+
+        <a href="/CrownGarden/CrownGarden.html">
+            <img id="seconIcon" src="./Images/CrownGardenLogga.png" alt="Bild på vår logga" href="./CrownGarden/CrownGarden.html">
+        </a>
+
+        <div id="menu">
+            <input type="checkbox" id="dropdown-check">
+            <div class="bar top"></div>
+            <div class="bar center"></div>
+            <div class="bar bottom"></div>
+            
+            
+            <div id="dropdown-menu">
+                <a class="dropdown-link" href="booking.html">Boka tid</a>
+                <a class="dropdown-link" href="event.html">Event</a>
+                <a class="dropdown-link" href="member.html">Medlem</a>
+                <a class="dropdown-link" href="store&restaurant.html">Butik</a>
+                <a class="dropdown-link" href="contact.html">Contact Us</a>
+                <a id="lastdropdown-link" href="about.html">Om oss</a>
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+        
+        <div id="background-image-welcome"></div>
+        <!-- bakgrundsbild -->
+
+        <div class="main-container">       
+            <section class="login-section">
+                <h1>Crown Gardenmedlem</h1>
+                    <h3>Fyll i dina uppgifter för att logga in</h3>
+                    <form action="">
+
+                    <div class="form-group">
+                        <label for="email">
+                            Epost:
+                    </label>
+                    <input type="text" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Skriv in din epostadress" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">
+                            Lösenord:
+                    </label>
+                    <input type="password"
+                            id="password" 
+                            name="password"
+                            placeholder="Skriv in ditt lösenord" required>
+                    </div>
+
+                        <div class="login-button-container">
+                                <button  class="login-button" type="submit">
+                                    Logga in
+                                </button>
+                        </div>
+                    </form>
+                    <p>Är du inte medlem?
+                        <a class="login-link" href="member.html">
+                            Registrera dig här!
+                        </a>
+                    </p>
+            </section>
+            <!-- log in form sektion -->
+            
+        </div>
+
+    </main>
+
+    <footer class="footer-container">
+        <div class="footer-grp-one">
+            <div class="linkedin-logga-container">
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <a href="https://www.linkedin.com/in/andreas-sjölander-12b661323/" target="_blank">Andreas</a>
+            <a href="https://www.linkedin.com/in/oscar-bagler-331569271/" target="_blank">Oscar.B</a>
+        </div>
+
+        <div class="footer-grp-one">
+            <div class="linkedin-logga-container">
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <a href="https://www.linkedin.com/in/youssef-kouliana-webbutvecklare/" target="_blank">Youssef</a>
+            <a href="http://linkedin.com/in/emil-karlsson-eriksson-3802ba324" target="_blank">Emil</a>
+            <a href="http://linkedin.com/in/sara-månsberg-1754b6174" target="_blank">Sara</a>
+        </div>
+
+        <div class="footer-grp-one">
+            <div class="linkedin-logga-container">
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <a href="https://www.linkedin.com/in/mattis-ericsson-bergman-31700224a/" target="_blank">Mattis</a>
+            <a href="https://www.linkedin.com/in/oskar-josefsson-604984231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Oskar.J</a>
+        </div> 
+    </footer>
+    
+</body>
+</html>

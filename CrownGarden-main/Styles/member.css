@@ -1,0 +1,249 @@
+#background-image-welcome1{
+    background: url(/CrownGarden/Images/member-golf-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 300px;
+    z-index: -1;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px 0 50px 0;
+    
+}
+
+.forum-visit-section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.forum-visit-section h2 a{
+    text-decoration: none;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #2e8b57;
+    transition: all 0.3s;
+    text-wrap: nowrap;
+}
+
+.forum-visit-section h2 a:hover{
+    text-decoration: underline;
+    background-color: #3c763d;
+}
+
+
+.login-section{
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    width: 500px;
+    text-align: center;
+}
+
+.login-section h1, .login-section h3, .radio-menu label{
+    color: #3c763d;
+}
+
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: #f0f7f4;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #3c763d;
+}
+
+.radio-menu{
+    display: flex;
+    flex-direction: row;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+.info-section h1{
+    margin-top: 10px;
+}
+
+
+.gold-h3{
+    color: #e4bd6e;
+    text-shadow: 0 0 2px #acacac;
+}
+
+.silver-h3{
+    color: #989898;
+    text-shadow: 0 0 2px #acacac;
+}
+
+.bronze-h3{
+    color: #c9885c;
+    text-shadow: 0 0 2px #acacac;
+}
+
+.junior-h3{
+    color: #81937c;
+    text-shadow: 0 0 2px #acacac;
+}
+
+
+label {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #555;
+    font-weight: bold;
+}
+
+.membership-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.membership-options-container{
+    margin: 20px 0 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    height: 100%;
+    vertical-align: middle;
+}
+
+.login-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-button {
+    width: 100%;
+    background-color: #2e8b57;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    margin: 10px 0 10px 0;
+}
+
+.login-button:hover{
+    background-color: #3c763d;
+}
+
+.login-link{
+    text-decoration: none;
+    color: #20d36e;
+    transition: color 0.3s ease;
+}
+
+.login-link:hover{
+    color: #3c763d;
+}
+
+.customer-support-container{
+    text-align: center;
+}
+
+.customer-support-container h3, .customer-support-container p{
+    margin-bottom: 5px;
+}
+
+.customer-support-container iframe{
+    height: 400px;
+    width: 600px;
+    border: ridge 5px #3c763d;
+    border-radius: 10px;
+    margin: 10px 0 10px 0;
+}
+
+.customer-support-container p a{
+    text-decoration: none;
+    color: #20d36e;
+    transition: color 0.3s ease;
+}
+
+.customer-support-container p a:hover{
+    color: #3c763d;
+}
+
+hr{
+    margin: 10px 0 10px 0;
+}
+
+@media (max-width: 950px ){
+
+    .forum-visit-section h2 a{
+        font-size: 18px;
+    }
+
+    .info-section{
+        width: 90%;
+        margin-right: 20px;
+    }
+
+    .login-section{
+        width: 90%;
+    }
+}
+
+@media (max-width: 780px){
+    .main-container{
+        flex-direction: column;
+        
+    }
+
+    .info-section{
+        margin: auto;
+        width: 95%;
+    }
+
+    .login-section{
+        margin: 40px auto auto auto;
+        width: 95%;
+    }
+
+    .customer-support-container iframe{
+        width: 95%;
+    }
+
+
+}

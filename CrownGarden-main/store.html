@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowngarden Butik</title>
+    <link rel="stylesheet" href="./Styles/nav.css">
+    <link rel="stylesheet" href="./Styles/store.css">
+    <link rel="stylesheet" href="./Styles/general.css">
+    <link rel="icon" type="image/png" href="Images/golfare.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header>
+        <nav id="nav-menu">
+            <a href="booking.html" class="nav-link" style="grid-column: 2;">Boka tid</a>
+            <a href="event.html" class="nav-link" style="grid-column: 4;">Event</a>
+            <a href="member.html" class="nav-link" style="grid-column: 6;">Medlem</a>
+            <a href="/CrownGarden/CrownGarden.html" style="grid-column: 8;">
+                <img id="logga-icon" src="./Images/CrownGardenLogga.png" alt="Bild på vår logga">
+            </a>
+            <a href="store&restaurant.html" class="nav-link" style="grid-column: 10;">Butik</a>
+            <a href="contact.html" class="nav-link" style="grid-column: 12;">Kontakta oss</a>
+            <a href="about.html" class="nav-link" style="grid-column: 14;">Om oss</a>
+        </nav>
+        <a href="/CrownGarden/CrownGarden.html">
+            <img id="seconIcon" src="./Images/CrownGardenLogga.png" alt="Bild på vår logga" href="/CrownGarden/CrownGarden.html">
+        </a>
+
+        <div id="menu">
+            <input type="checkbox" id="dropdown-check">
+            <div class="bar top"></div>
+            <div class="bar center"></div>
+            <div class="bar bottom"></div>
+            
+            
+            <div id="dropdown-menu">
+                <a class="dropdown-link" href="booking.html">Boka tid</a>
+                <a class="dropdown-link" href="event.html">Event</a>
+                <a class="dropdown-link" href="member.html">Medlem</a>
+                <a class="dropdown-link" href="store&restaurant.html">Butik</a>
+                <a id="lastdropdown-link" href="about.html">Om oss</a>
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+
+        <div id="background-image-welcome1"></div>
+        <div id="store-description">
+            <p>
+                Välkommen till Crown Gardens Butik – Din ultimata golfbutik för kläder och accessoarer! <br><br>
+
+                På Crown Garden brinner vi för att kombinera stil, komfort och prestanda för varje golfare. Vår exklusiva kollektion av kvalitetskepsar, snygga jackor och anpassningsbara patches är designad för att hålla dig snygg både på och utanför banan. <br>
+                
+                Oavsett om du är ute på banan eller bara vill visa din kärlek till sporten, har Crown Garden allt du behöver för att hålla dig både stilfull och bekväm. 
+            </p>
+        </div>
+        <div id="cart-icon-box">
+            <a class="cart-icon"><img id="cart-icon-image" src="./Images/cart-icon.png" alt="cart"></a>
+        </div>
+
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="filter-title-box">
+                    <h1 class="filter-title">Filter</h1>
+                </div>
+                <div class="box-containers">
+                    <div class="price-box">
+                        <a class="title">Price</a>
+                        <a><input type="checkbox"> &#60; 100</a>
+                        <a><input type="checkbox"> 100-300</a>
+                        <a><input type="checkbox"> 300-500</a>
+                    </div>
+                    <div class="type-box">
+                        <a class="title">Type</a>
+                        <a><input type="checkbox"> Headwear</a>
+                        <a><input type="checkbox"> Bodywear</a>
+                        <a><input type="checkbox"> Miscellaneous</a>
+                        <h4> </h4>
+                        <h4></h4>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="grid-container">
+                <a class="item-box" href="#">
+                    <img class="shop-icon" href="#" src="./Images/cap 1.png" alt="">
+                    <p>Crowngarden Keps Röd</p>
+                    <h4><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span class="gray-star">&#9733;</span></h4>
+                    <h4>225 kr</h4>
+                </a>
+                <a class="item-box" href="#">
+                    <img class="shop-icon" href="#" src="./Images/cap 2.png" alt="">
+                    <p>Crowngarden Keps Grön</p>
+                    <h4><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span class="gray-star">&#9733;</span><span class="gray-star">&#9733;</span></h4>
+                    <h4>225 kr</h4>
+                </a>                
+                <a class="item-box" href="#">
+                    <img class="shop-icon" href="#" src="./Images/cap 3.png" alt="">
+                    <p>Crowngarden Keps Blå</p>
+                    <h4><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></h4>
+                    <h4>225 kr</h4>
+                </a>                
+                <a class="item-box" href="#">
+                    <img class="shop-icon" href="#" src="./Images/jacket 3.png" alt="">
+                    <p>Crowngarden Jacka Röd</p>
+                    <h4><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span class="gray-star">&#9733;</span></h4>
+                    <h4>450 kr</h4>
+                </a>                
+                <a class="item-box" href="#">
+                    <img class="shop-icon" href="#" src="./Images/jacket 2.png" alt="">
+                    <p>Crowngarden Jacka Grön</p>
+                    <h4><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span class="gray-star">&#9733;</span></h4>
+                    <h4>450 kr</h4>
+                </a>                
+                <a class="item-box" href="#">
+                    <img class="shop-icon" href="#" src="./Images/jacket 1.png" alt="">
+                    <p>Crowngarden Jacka Blå</p>
+                        <h4><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span class="gray-star">&#9733;</span><span class="gray-star">&#9733;</span><h4>
+                        <h4>450 kr</h4>
+                </a>                
+                <a class="item-box" href="#">
+                    <img class="shop-icon" href="#" src="./Images/patch.png" alt="">
+                    <p>Patch</p>
+                    <h4><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span class="gray-star">&#9733;</span><span class="gray-star">&#9733;</span></h4>
+                    <h4>75 kr</h4>
+                </a>
+            </div>
+        </div>    
+    </main>
+
+    <footer class="footer-container">
+        <div class="footer-grp-one">
+            <div class="linkedin-logga-container">
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <a href="https://www.linkedin.com/in/andreas-sjölander-12b661323/" target="_blank">Andreas</a>
+            <a href="https://www.linkedin.com/in/oscar-bagler-331569271/" target="_blank">Oscar.B</a>
+        </div>
+
+        <div class="footer-grp-one">
+            <div class="linkedin-logga-container">
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <a href="https://www.linkedin.com/in/youssef-kouliana-webbutvecklare/" target="_blank">Youssef</a>
+            <a href="http://linkedin.com/in/emil-karlsson-eriksson-3802ba324" target="_blank">Emil</a>
+            <a href="http://linkedin.com/in/sara-månsberg-1754b6174" target="_blank">Sara</a>
+        </div>
+
+        <div class="footer-grp-one">
+            <div class="linkedin-logga-container">
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <a href="https://www.linkedin.com/in/mattis-ericsson-bergman-31700224a/" target="_blank">Mattis</a>
+            <a href="https://www.linkedin.com/in/oskar-josefsson-604984231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Oskar.J</a>
+        </div> 
+    </footer>
+    
+</body>
+</html>

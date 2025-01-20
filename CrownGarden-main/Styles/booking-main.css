@@ -1,0 +1,869 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+body, html{
+    height: 100%;
+}
+
+header{
+    position: absolute;
+}
+
+#dropdown-menu{
+    width: 100%;
+    height: 350vh;
+}
+
+main{
+    box-sizing: border-box;
+    font-family: 'Sora';
+    position: relative;
+    top: 100px;
+    min-height: 800px;
+}
+
+#user-interact{
+    position: relative;
+    top: 15vh;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+#time{
+    width: 400px;
+    height: 390px;
+    margin-left: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+}
+
+#time div{
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#confirm, #confirm-two, #confirm-three, #confirm-four, #confirm-five{
+    display: none;
+    cursor: pointer;
+    grid-column: 2;
+    background-color: #086cfc;
+    color: white;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#confirm-two{
+    grid-row: 2;
+}
+#confirm-three{
+    grid-row: 3;
+}
+#confirm-four{
+    grid-row: 4;
+}
+#confirm-five{
+    grid-row: 5;
+}
+
+#submit-time-one{
+    cursor: pointer;
+    appearance: none;
+    border: 0%;
+    grid-row: 1;
+    grid-column: 2;
+    position: relative;
+    width: 200%;
+    left: -102%;
+    height: 70px;
+}
+
+.check-date{
+    height: 57.36px;
+    width: 57.36px;
+}
+
+#submit-time-two{
+    cursor: pointer;
+    appearance: none;
+    border: 0%;
+    grid-row: 2;
+    grid-column: 2;
+    position: relative;
+    width: 200%;
+    left: -102%;
+    height: 70px;
+}
+
+#submit-time-three{
+    cursor: pointer;
+    appearance: none;
+    border: 0%;
+    grid-row: 3;
+    grid-column: 2;
+    position: relative;
+    width: 200%;
+    left: -102%;
+    height: 70px;
+}
+
+#submit-time-four{
+    cursor: pointer;
+    appearance: none;
+    border: 0%;
+    grid-row: 4;
+    grid-column: 2;
+    position: relative;
+    width: 200%;
+    left: -102%;
+    height: 70px;
+}
+
+#submit-time-five{
+    cursor: pointer;
+    appearance: none;
+    border: 0%;
+    grid-row: 5;
+    grid-column: 2;
+    position: relative;
+    width: 200%;
+    left: -102%;
+    height: 70px;
+}
+
+.time-one{
+    border: solid #086cfc;
+    color: #086cfc;
+    grid-row: 1;
+    grid-column: 1 / 3;
+}
+.time-two{
+    border: solid #086cfc;
+    color: #086cfc;
+    grid-row: 2;
+    grid-column: 1 / 3;
+}
+.time-three{
+    border: solid #086cfc;
+    color: #086cfc;
+    grid-row: 3;
+    grid-column: 1 / 3;
+}
+.time-four{
+    border: solid #086cfc;
+    color: #086cfc;
+    grid-row: 4;
+    grid-column: 1 / 3;
+}
+.time-five{
+    border: solid #086cfc;
+    color: #086cfc;
+    grid-row: 5;
+    grid-column: 1 / 3;
+}
+
+#submit-time-one:checked + .time-one{
+    border-color: transparent;
+    background-color: #48648c;
+    color: white;
+    grid-column: 1;
+}
+
+#submit-time-one:checked ~ #confirm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 1;
+}
+
+#submit-time-two:checked + .time-two{
+    border-color: transparent;
+    background-color: #48648c;
+    color: white;
+    grid-column: 1;
+}
+
+#submit-time-two:checked ~ #confirm-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit-time-three:checked + .time-three{
+    border-color: transparent;
+    background-color: #48648c;
+    color: white;
+    grid-column: 1;
+}
+
+#submit-time-three:checked ~ #confirm-three{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit-time-four:checked + .time-four{
+    border-color: transparent;
+    background-color: #48648c;
+    color: white;
+    grid-column: 1;
+}
+
+#submit-time-four:checked ~ #confirm-four{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit-time-five:checked + .time-five{
+    border-color: transparent;
+    background-color: #48648c;
+    color: white;
+    grid-column: 1;
+}
+
+#submit-time-five:checked ~ #confirm-five{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calendar-section{
+    font-size: 28px;
+    width: 400px;
+}
+
+#selection-date{
+    font-size: 28px;
+    position: absolute;
+    top: -15%;
+}
+
+#selection-date::after, #selection-date::before{
+    cursor: pointer;
+    border: solid #086cfc;
+    z-index: -1;
+}
+
+#selection-date::after{
+    content: '';
+    position: absolute;
+    top: 30%;
+    transform: rotate(45deg);
+    border-width: 1px 1px 0 0;
+    padding: 4%;
+    left: 150%;
+}
+
+#selection-date::before{
+    content: '';
+    position: absolute;
+    top: 30%;
+    transform: rotate(-135deg);
+    border-width: 1px 1px 0 0;
+    padding: 4%;
+    right: 150%;
+}
+
+#selection-date-checkbox-before{
+    cursor: pointer;
+    position: absolute;
+    top: -18%;
+    left: 31px;
+    height: 57.36px;
+    width: 57.36px;
+    opacity: 0;
+}
+
+#selection-date-checkbox-after{
+    cursor: pointer;
+    position: absolute;
+    top: -18%;
+    right: 32px;
+    height: 57.36px;
+    width: 57.36px;
+    opacity: 0;
+}
+
+#selection-date-checkbox-before:checked ~ #selection-date::before{
+    border-color: white;
+}
+
+
+#selection-date-checkbox-before:checked ~ #selection-date-before{
+    background-color: #086cfc;
+}
+
+#selection-date-checkbox-after:checked ~ #selection-date::after{
+    border-color: white;
+}
+
+
+#selection-date-checkbox-after:checked ~ #selection-date-after{
+    background-color: #086cfc;
+}
+
+#selection-date-before{
+    position: absolute;
+    cursor: pointer;
+    height: 57.36px;
+    width: 57.36px;
+    background-color: #f8fcfc;
+    border-radius: 100%;
+    z-index: -2;
+    top: -18%;
+    left: 31px;
+
+}
+#selection-date-after{
+    position: absolute;
+    cursor: pointer;
+    height: 57.36px;
+    width: 57.36px;
+    background-color: #f8fcfc;
+    border-radius: 100%;
+    z-index: -2;
+    top: -18%;
+    right: 32px;
+}
+
+.booking{
+    position: relative;
+    right: 200px;
+    grid-column: 1 / 8;
+    grid-row: 1 / 7;
+    display: grid;
+    grid-template-columns: repeat(7, 57.36px);
+    grid-template-rows: repeat(6, 57.36px);
+    justify-items: center;
+    gap: 10px;
+}
+
+.dates-container{
+    position: absolute;
+    width: 100%;
+    top: calc(57.36px + 10px);
+    display: grid;
+    grid-template-columns: repeat(7, 57.36px);
+    grid-template-rows: repeat(5, 57.36px);
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.date-universal{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8fcfc;
+    color: #086cfc;
+}
+
+.check-1:checked ~ .dates-container .day-1{
+    background-color: #086cfc;
+    color: white;
+}
+.check-2:checked ~ .dates-container .day-2{
+    background-color: #086cfc;
+    color: white;
+}
+.check-3:checked ~ .dates-container .day-3{
+    background-color: #086cfc;
+    color: white;
+}
+.check-4:checked ~ .dates-container .day-4{
+    background-color: #086cfc;
+    color: white;
+}
+.check-5:checked ~ .dates-container .day-5{
+    background-color: #086cfc;
+    color: white;
+}
+.check-6:checked ~ .dates-container .day-6{
+    background-color: #086cfc;
+    color: white;
+}
+.check-7:checked ~ .dates-container .day-7{
+    background-color: #086cfc;
+    color: white;
+}
+.check-8:checked ~ .dates-container .day-8{
+    background-color: #086cfc;
+    color: white;
+}
+.check-9:checked ~ .dates-container .day-9{
+    background-color: #086cfc;
+    color: white;
+}
+.check-10:checked ~ .dates-container .day-10{
+    background-color: #086cfc;
+    color: white;
+}
+.check-11:checked ~ .dates-container .day-11{
+    background-color: #086cfc;
+    color: white;
+}
+.check-12:checked ~ .dates-container .day-12{
+    background-color: #086cfc;
+    color: white;
+}
+.check-13:checked ~ .dates-container .day-13{
+    background-color: #086cfc;
+    color: white;
+}
+.check-14:checked ~ .dates-container .day-14{
+    background-color: #086cfc;
+    color: white;
+}
+.check-15:checked ~ .dates-container .day-15{
+    background-color: #086cfc;
+    color: white;
+}
+.check-16:checked ~ .dates-container .day-16{
+    background-color: #086cfc;
+    color: white;
+}
+.check-17:checked ~ .dates-container .day-17{
+    background-color: #086cfc;
+    color: white;
+}
+.check-18:checked ~ .dates-container .day-18{
+    background-color: #086cfc;
+    color: white;
+}
+.check-19:checked ~ .dates-container .day-19{
+    background-color: #086cfc;
+    color: white;
+}
+.check-20:checked ~ .dates-container .day-20{
+    background-color: #086cfc;
+    color: white;
+}
+.check-21:checked ~ .dates-container .day-21{
+    background-color: #086cfc;
+    color: white;
+}
+.check-22:checked ~ .dates-container .day-22{
+    background-color: #086cfc;
+    color: white;
+}
+.check-23:checked ~ .dates-container .day-23{
+    background-color: #086cfc;
+    color: white;
+}
+.check-24:checked ~ .dates-container .day-24{
+    background-color: #086cfc;
+    color: white;
+}
+.check-25:checked ~ .dates-container .day-25{
+    background-color: #086cfc;
+    color: white;
+}
+.check-26:checked ~ .dates-container .day-26{
+    background-color: #086cfc;
+    color: white;
+}
+.check-27:checked ~ .dates-container .day-27{
+    background-color: #086cfc;
+    color: white;
+}
+.check-28:checked ~ .dates-container .day-28{
+    background-color: #086cfc;
+    color: white;
+}
+.check-29:checked ~ .dates-container .day-29{
+    background-color: #086cfc;
+    color: white;
+}
+.check-30:checked ~ .dates-container .day-30{
+    background-color: #086cfc;
+    color: white;
+}
+.check-31:checked ~ .dates-container .day-31{
+    background-color: #086cfc;
+    color: white;
+}
+
+#rules{
+    margin: 200px 0 0 250px;
+}
+
+.rules-check{
+    display: block;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    width: 400px;
+}
+
+.rule-check-1{
+    cursor: pointer;
+    appearance: none;
+    left: 0;
+    height: 75px;
+}
+
+.rule-check-2{
+    display: none;
+    cursor: pointer;
+    appearance: none;
+    left: 0;
+    height: 75px;
+    top: 75px;
+}
+.rule-check-3{
+    display: none;
+    cursor: pointer;
+    appearance: none;
+    left: 0;
+    height: 75px;
+    top: 150px;
+}
+.rule-check-4{
+    display: none;
+    cursor: pointer;
+    appearance: none;
+    left: 0;
+    height: 75px;
+    top: 225px;
+}
+.rule-check-5{
+    display: none;
+    cursor: pointer;
+    appearance: none;
+    left: 0;
+    height: 75px;
+    top: 300px;
+}
+.rule-check-6{
+    display: none;
+    cursor: pointer;
+    appearance: none;
+    left: 0;
+    height: 75px;
+    top: 375px;
+}
+.rule-check-7{
+    display: none;
+    cursor: pointer;
+    appearance: none;
+    left: 0;
+    height: 75px;
+    top: 450px;
+}
+
+.drop-down-rule{
+    position: relative;
+    cursor: pointer;
+    width: 400px;
+    height: 75px;
+    border-radius: 10px 10px 0 0;
+    background-color: #48648c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+}
+
+.drop-down-rule::after{
+    content: '';
+    position: absolute;
+    transform: rotate(135deg);
+    left: 350px;
+    top: 26px;
+    border: solid white;
+    border-width: 3px 3px 0 0;
+    padding: 7px;
+}
+
+.rule-one, .rule-two, .rule-three, .rule-four, .rule-five, .rule-six{
+    display: none;
+}
+
+.rule-check-1:checked ~ .rules::after{
+    transform-origin: center;
+    transition: all 0.2s;
+    top: 36px;
+    transform: rotate(-45deg);
+}
+
+.rule-check-1:checked ~ .drop-down-rule{
+    display: flex;
+}
+
+.rule-one:hover::after{
+    transform-origin: center;
+    transition: all 0.2s;
+    top: 36px;
+    transform: rotate(-45deg);
+}
+
+.rule-one:hover ~ .popout-rule-one{
+    display: block;
+}
+
+.rule-two:hover::after{
+    transform-origin: center;
+    transition: all 0.2s;
+    top: 36px;
+    transform: rotate(-45deg);
+}
+
+.rule-two:hover ~ .popout-rule-two{
+    display: block;
+}
+
+.rule-three:hover::after{
+    transform-origin: center;
+    transition: all 0.2s;
+    top: 36px;
+    transform: rotate(-45deg);
+}
+
+.rule-three:hover ~ .popout-rule-three{
+    display: block;
+}
+
+.rule-four:hover::after{
+    transform-origin: center;
+    transition: all 0.2s;
+    top: 36px;
+    transform: rotate(-45deg);
+}
+
+.rule-four:hover ~ .popout-rule-four{
+    display: block;
+}
+
+.rule-five:hover::after{
+    transform-origin: center;
+    transition: all 0.2s;
+    top: 36px;
+    transform: rotate(-45deg);
+}
+
+.rule-five:hover ~ .popout-rule-five{
+    display: block;
+}
+
+.rule-six:hover::after{
+    transform-origin: center;
+    transition: all 0.2s;
+    top: 36px;
+    transform: rotate(-45deg);
+}
+
+.rule-six:hover ~ .popout-rule-six{
+    display: block;
+}
+
+.popout-rule{
+    width: 320px;
+    position: absolute;
+    border-radius: 0 10px 10px 0;
+    background-color: #48648c;
+    font-size: 24px;
+    color: white;
+    left: 400px;
+}
+
+.popout-rule-one{
+    top: 110px;
+    display: none;
+}
+.popout-rule-two{
+    top: 190px;
+    display: none;
+}
+.popout-rule-three{
+    top: 260px;
+    display: none;
+}
+.popout-rule-four{
+    top: 335px;
+    display: none;
+}
+.popout-rule-five{
+    top: 410px;
+    display: none;
+}
+.popout-rule-six{
+    top: 485px;
+    display: none;
+}
+
+#golfbana-bild{
+    background-image: url(../Images/golftoppicture.jpg);
+    width: 100%;
+    height: 800px;
+    position: relative;
+    bottom: 50%;
+    margin-top: 810px;
+    background-size: cover;
+    z-index: -1;
+}
+
+footer{
+    margin-top: 1200px;
+}
+
+@media (max-width: 1200px){
+
+    body, html{
+        height: 120%;
+        position: relative;
+    }
+
+    .booking{
+        gap: 0;
+    }
+
+    .dates-container{
+        gap: 0;
+    }
+
+    .check-date{
+        margin-top: 19px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .date-universal{
+        width: 40px;
+        height: 40px;
+    }
+
+    #time{
+        margin: 0;
+    }
+
+    #calendar-section{
+        margin: 0;
+    }
+
+    .booking{
+        top: 100px;
+        right: 0;
+        font-size: 20px;
+    }
+
+    #rules{
+        margin: 200px 0 0 0;
+        font-size: 17px;
+    }
+
+    .rules-check{
+        width: 300px;
+    }
+
+    .popout-rule{
+        font-size: 17px;
+        left: 300px;
+        width: 95px;
+    }
+
+    .drop-down-rule{
+        width: 300px;
+        font-size: 17px;
+    }
+    
+    .rule-check-2, .rule-check-3, .rule-check-4, .rule-check-5, .rule-check-6, .rule-check-7{
+        display: block;
+    }
+
+    .drop-down-rule::after{
+        left: 265px;
+        padding: 5px;
+    }
+
+    #user-interact{
+        top: 60px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rule-check-2:checked ~ .rule-one::after{
+        transform-origin: center;
+        transition: all 0.2s;
+        top: 36px;
+        transform: rotate(-45deg);
+    }
+    
+    .rule-check-2:checked ~ .popout-rule-one{
+        display: block;
+    }
+    
+    .rule-check-3:checked ~ .rule-two::after{
+        transform-origin: center;
+        transition: all 0.2s;
+        top: 36px;
+        transform: rotate(-45deg);
+    }
+    
+    .rule-check-3:checked ~ .popout-rule-two{
+        display: block;
+    }
+    
+    .rule-check-4:checked ~ .rule-three::after{
+        transform-origin: center;
+        transition: all 0.2s;
+        top: 36px;
+        transform: rotate(-45deg);
+    }
+    
+    .rule-check-4:checked ~ .popout-rule-three{
+        display: block;
+    }
+    
+    .rule-check-5:checked ~ .rule-four::after{
+        transform-origin: center;
+        transition: all 0.2s;
+        top: 36px;
+        transform: rotate(-45deg);
+    }
+    
+    .rule-check-5:checked ~.popout-rule-four{
+        display: block;
+    }
+    
+    .rule-check-6:checked ~ .rule-five::after{
+        transform-origin: center;
+        transition: all 0.2s;
+        top: 36px;
+        transform: rotate(-45deg);
+    }
+    
+    .rule-check-6:checked ~ .popout-rule-five{
+        display: block;
+    }
+    
+    .rule-check-7:checked ~ .rule-six::after{
+        transform-origin: center;
+        transition: all 0.2s;
+        top: 36px;
+        transform: rotate(-45deg);
+    }
+    
+    .rule-check-7:checked ~ .popout-rule-six{
+        display: block;
+    }
+
+    .rule-check-1:not(:checked) ~ .popout-rule{
+        display: none;
+    }
+
+    footer{
+        margin-top: 1500px;
+    }
+}
